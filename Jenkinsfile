@@ -11,16 +11,16 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo "Building JAR..."
+                echo "Building WAR..."
                 sh 'mvn clean package'
             }
         }
 
         stage('Archive') {
             steps {
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+                echo "Archiving WAR..."
+                archiveArtifacts artifacts: 'target/*.war', fingerprint: true
             }
         }
     }
 }
-
