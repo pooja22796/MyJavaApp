@@ -7,7 +7,7 @@
     <groupId>com.example</groupId>
     <artifactId>MyJavaApp</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>MyJavaApp</name>
 
